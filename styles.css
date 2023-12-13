@@ -181,3 +181,12 @@ main
     cursor: pointer;
     box-shadow: 0 0 2rem #E5E9EF;
 }
+
+.card_img
+{
+    width: 180px;
+    height: auto;
+    padding: 3rem 0;
+    transition: 0.5s;
+    mix-blend-mode: darken;
+}
