@@ -167,6 +167,7 @@ main
     color: #FFF;
     font-weight: bold;
     border-radius: 0 1rem 1rem 0;
+    transition: none;
 }
 
 .card
@@ -188,6 +189,7 @@ main
     height: auto;
     padding: 3rem 0;
     mix-blend-mode: darken;
+    transition: all 0.5s ease-in-out;
 }
 
 .card_name
@@ -203,6 +205,7 @@ main
     background-color: var(--dark-color);
     color: #fff;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
 }
 
 .card_icon
@@ -250,13 +253,11 @@ main
 .card:hover .card_name
 {
     left: 0;
-    transition: 0.5s;
 }
 .card:hover .card_img
 {
     transform: rotate(30deg);
     margin-left: 3.5rem;
-    transition: 0.5s;
 }
 .card:hover .card_like
 {
