@@ -122,12 +122,22 @@ main
     gap: 20px;
 }
 
-.banner .card_prices .card_price
+.banner .card_prices .card_price .card_price_now
 {
     font-size: 1.5rem !important;
+}
+
+.banner .card_prices .card_price
+{
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-evenly;
 }
 
+.banner .card_prices .card_price .card_icon
+{
+    position: relative;
+    top: 4px;
+    font-size: 1.2rem;
+}
