@@ -82,6 +82,7 @@ main
     margin: 0 2.5rem;
 }
 
+/* This is for the short line that is after the title name */
 .title_shop::after
 {
     content: "";
