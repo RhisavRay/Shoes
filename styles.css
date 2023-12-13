@@ -173,4 +173,11 @@ main
 {
     position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 2rem #E5E9EF;
 }
