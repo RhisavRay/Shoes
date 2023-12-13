@@ -58,6 +58,7 @@ a
     text-decoration: none;
 }
 
+/* The next 2 are basically for the same component, but is seperated for the sake of ease of understanding */
 main
 {
     padding: 2rem 0;
@@ -74,3 +75,4 @@ main
     width: 100%;
     margin: auto;
 }
+
