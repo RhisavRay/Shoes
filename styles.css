@@ -105,3 +105,8 @@ main
     border-radius: 1rem;
     background-color: var(--third-color) !important;
 }
+
+.banner .card_img
+{
+    width: 380px;
+}
