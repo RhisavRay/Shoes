@@ -69,8 +69,6 @@ main
     display: grid;
     grid-template-columns: repeat(3, minmax(220px, 1fr));
     max-width: 1200px;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
     align-items: center;
     gap: 2rem;
     width: 100%;
