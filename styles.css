@@ -125,4 +125,9 @@ main
 .banner .card_prices .card_price
 {
     font-size: 1.5rem !important;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
 }
+
