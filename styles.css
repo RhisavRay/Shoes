@@ -168,3 +168,9 @@ main
     font-weight: bold;
     border-radius: 0 1rem 1rem 0;
 }
+
+.card
+{
+    position: relative;
+    display: flex;
+}
