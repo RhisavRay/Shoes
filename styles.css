@@ -110,3 +110,14 @@ main
 {
     width: 380px;
 }
+
+.banner .card_prices
+{
+    width: 20%;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: 0.5s;
+    gap: 20px;
+}
