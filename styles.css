@@ -76,8 +76,19 @@ main
     margin: auto;
 }
 
-title_shop
+.title_shop
 {
     position: relative;
     margin: 0 2.5rem;
+}
+
+.title_shop::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 72px;
+    height: 2px;
+    background-color: var(--dark-color);
+    margin-left: 0.25rem;
 }
