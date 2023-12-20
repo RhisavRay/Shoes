@@ -1,39 +1,48 @@
 function createCard(data)
 {
     // Article tag encasing the product info
-    const article = document.createElement('article').classList.add('card');
+    const article = document.createElement('article')
+    article.classList.add('card');
 
     // Product image
-    const imgDiv = document.createElement('div').classList.add('card_img');
+    const imgDiv = document.createElement('div')
+    imgDiv.classList.add('card_img');
     const img = document.createElement('img');
     img.src = data.imgUrl;
     img.alt = data.name;
     imgDiv.appendChild(img);
 
     // Product name
-    const nameDiv = document.createElement('div').classList.add('card_name');
+    const nameDiv = document.createElement('div')
+    nameDiv.classList.add('card_name');
     const name = document.createElement('p');
     name.textContent = data.name;
     nameDiv.appendChild(name);
 
     // Like icon
-    const likeDiv = document.createElement('div').classList.add('card_like');
-    const likeA = document.createElement('a').classList('card_icon');
-    likeA.href='#';
-    const likeIcon = document.createElement('ion-icon').setAttribute('name', 'heart-outline');
+    const likeDiv = document.createElement('div')
+    likeDiv.classList.add('card_like');
+    const likeA = document.createElement('a')
+    likeA.classList.add('card_icon');
+    likeA.href='';
+    const likeIcon = document.createElement('ion-icon')
+    likeIcon.setAttribute('name', 'heart-outline');
     likeA.appendChild(likeIcon);
     likeDiv.appendChild(likeA);
 
     // Product price
     const div = document.createElement('div');
-    const priceSpan = document.createElement('span').classList.add('card_price')
+    const priceSpan = document.createElement('span')
+    priceSpan.classList.add('card_price')
     priceSpan.textContent = data.price;
     div.appendChild(priceSpan);
 
     // Cart icon
-    const cartA = document.createElement('a').classList.add('card_icon');
-    cartA.href = '#';
-    const cartIcon = document.createElement('ion-icon').setAttribute('name', 'cart-outline');
+    const cartA = document.createElement('a')
+    cartA.classList.add('card_icon');
+    cartA.href = '';
+    const cartIcon = document.createElement('ion-icon')
+    cartIcon.setAttribute('name', 'cart-outline');
     cartA.appendChild(cartIcon);
 
     // Appending elements to the parent article
@@ -53,7 +62,7 @@ function createCard(data)
         console.error("Main element not found");
 }
 
-fetch('nikeData.json')
+fetch('./Scraper/nikeData.json')
 .then( (response) => response.json() )
 .then( jsonData => {
     // Loop through the data in file and create cards
