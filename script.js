@@ -10,4 +10,10 @@ function createCard(data)
     img.alt = data.name;
     imgDiv.appendChild(img);
 
+    // Product name
+    const nameDiv = document.createElement('div').classList.add('card_name');
+    const name = document.createElement('p');
+    name.textContent = data.name;
+    nameDiv.appendChild(name);
+
 }
