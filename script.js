@@ -36,4 +36,11 @@ function createCard(data)
     const cartIcon = document.createElement('ion-icon').setAttribute('name', 'cart-outline');
     cartA.appendChild(cartIcon);
 
+    // Appending elements to the parent article
+    article.appendChild(imgDiv);
+    article.appendChild(nameDiv);
+    article.appendChild(likeDiv);
+    article.appendChild(div);
+    article.appendChild(cartA);
 }
+
