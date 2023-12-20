@@ -16,4 +16,12 @@ function createCard(data)
     name.textContent = data.name;
     nameDiv.appendChild(name);
 
+    // Like icon
+    const likeDiv = document.createElement('div').classList.add('card_like');
+    const likeA = document.createElement('a').classList('card_icon');
+    likeA.href='#';
+    const likeIcon = document.createElement('ion-icon').setAttribute('name', 'heart-outline');
+    likeA.appendChild(likeIcon);
+    likeDiv.appendChild(likeA);
+
 }
