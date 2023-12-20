@@ -42,6 +42,15 @@ function createCard(data)
     article.appendChild(likeDiv);
     article.appendChild(div);
     article.appendChild(cartA);
+
+    // Selecting the main element
+    const mainElement = document.querySelector('.main.bd-grid');
+
+    // Checking if main element is found, and then appending article
+    if (mainElement)
+        mainElement.appendChild(article);
+    else
+        console.error("Main element not found");
 }
 
 fetch('nikeData.json')
