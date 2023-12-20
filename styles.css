@@ -122,7 +122,7 @@ main
     gap: 20px;
 }
 
-.banner .card_prices .card_price .card_price_now
+.banner .card_prices .card_price .card_price
 {
     font-size: 1.5rem !important;
 }
@@ -234,13 +234,7 @@ main
     text-align: center;
 }
 
-.card_price_before
-{
-    font-size: var(--smaller-font-size);
-    color: var(--accent-color);
-    margin-bottom: 0.25rem;
-}
-.card_price_now
+.card_price
 {
     font-size: var(--h3-font-size);
     font-weight: bold;
