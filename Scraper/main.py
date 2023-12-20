@@ -22,7 +22,7 @@ for productCard in productCards:
 
     name = productCard.find_element(By.CLASS_NAME, 'product-card__title').text
 
-    price = productCard.find_element(By.CLASS_NAME, 'product-price').text[8:].replace(' ', ',')
+    price = productCard.find_element(By.CLASS_NAME, 'product-price').text[6:].replace(' ', ',')
 
     info = {'name': name, 'price': price, 'imgUrl': imgUrl}
 

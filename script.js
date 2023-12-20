@@ -62,7 +62,7 @@ function createCard(data)
         console.error("Main element not found");
 }
 
-fetch('./Scraper/nikeData.json')
+fetch('nikeData.json')
 .then( (response) => response.json() )
 .then( jsonData => {
     // Loop through the data in file and create cards
