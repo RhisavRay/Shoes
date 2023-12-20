@@ -24,4 +24,10 @@ function createCard(data)
     likeA.appendChild(likeIcon);
     likeDiv.appendChild(likeA);
 
+    // Product price
+    const div = document.createElement('div');
+    const priceSpan = document.createElement('span').classList.add('card_price')
+    priceSpan.textContent = data.price;
+    div.appendChild(priceSpan);
+
 }
