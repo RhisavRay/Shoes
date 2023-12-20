@@ -44,3 +44,10 @@ function createCard(data)
     article.appendChild(cartA);
 }
 
+fetch('nikeData.json')
+.then( (response) => response.json() )
+.then( jsonData => {
+    // Loop through the data in file and create cards
+    jsonData.forEach(createCard);
+})
+.catch(error => console.error('Error fetching JSON:', error));
