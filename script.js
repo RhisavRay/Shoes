@@ -3,4 +3,11 @@ function createCard(data)
     // Article tag encasing the product info
     const article = document.createElement('article').classList.add('card');
 
+    // Product image
+    const imgDiv = document.createElement('div').classList.add('card_img');
+    const img = document.createElement('img');
+    img.src = data.imgUrl;
+    img.alt = data.name;
+    imgDiv.appendChild(img);
+
 }
