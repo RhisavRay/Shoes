@@ -30,4 +30,10 @@ function createCard(data)
     priceSpan.textContent = data.price;
     div.appendChild(priceSpan);
 
+    // Cart icon
+    const cartA = document.createElement('a').classList.add('card_icon');
+    cartA.href = '#';
+    const cartIcon = document.createElement('ion-icon').setAttribute('name', 'cart-outline');
+    cartA.appendChild(cartIcon);
+
 }
